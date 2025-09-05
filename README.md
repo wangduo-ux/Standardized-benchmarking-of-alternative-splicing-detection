@@ -5,9 +5,10 @@
 **Installation**
 
 Install the required packages with:
-
-```bash
+```
+bash
 pip install -r requirements.txt
+```
 
 **Input**
 
@@ -42,17 +43,18 @@ Your input directory
         ├── alt5prime.tsv
         └── ...
 ```
+
 **Output**
 
 After running ASB.py, a uniform_ID column will be added to the output files of each software in their respective folders. 
 In addition, a folder named sample_name will be created under your input directory, containing comparison plots of the results from different software, including intersections of detected alternative splicing events, dPSI quantification consistency plots, and intersections of differential splicing events.
 
 **Command and options**
-
+```
 python ASB.py -s SUPPA2 rMATS PSI-Sigma MAJIQ -e SE A5SS A3SS MX RI AF AL -g Homo_sapiens.GRCh38.109.gtf -i Your_input_directory -o Your_output_directory -sn Your_sample_name
-
+```
 List of options available:
-
+```
 -s | --software: space separated list of tools for benchmarking from the following list:SUPPA2, rMATS, PSI-Sigma, MAJIQ.
 
 -o | --output-file: name of the output directory.
@@ -72,4 +74,4 @@ MX: Mutually Exclusive (MX) exons
 RI: Retained intron (RI)
 AF: Alternative first exons
 AL: Alternative last exons
-
+```
