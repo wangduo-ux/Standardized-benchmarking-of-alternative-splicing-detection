@@ -42,6 +42,8 @@ In addition, a folder named sample_name will be created under your input directo
 
 **Command and options**
 
+python ASB.py -s SUPPA2 rMATS PSI-Sigma MAJIQ -e SE A5SS A3SS MX RI AF AL -g Homo_sapiens.GRCh38.109.gtf -i Your_input_directory -o Your_output_directory -sn Your_sample_name
+
 List of options available:
 
 -s | --software: space separated list of tools for benchmarking from the following list:SUPPA2, rMATS, PSI-Sigma, MAJIQ.
