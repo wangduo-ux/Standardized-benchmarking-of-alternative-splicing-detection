@@ -1,0 +1,9 @@
+pandas
+numpy
+matplotlib
+seaborn
+matplotlib-venn
+venn
+upsetplot
+scipy
+pillow
