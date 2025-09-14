@@ -8,9 +8,9 @@ import pandas as pd
 from scripts import (
     load_file,
     save_dataframe,
-    annotate_das_class,
+    annotate_dse_class,
     extract_dpsi,
-    filter_rmats_novel_events,
+    filter_novel_events,
     plot_venn_per_event_vennlib,
     plot_upset_per_event_combined,
     plot_multiple_event_summaries,
@@ -27,8 +27,8 @@ def unify_results(input_dir, software_list, event_list, sample_name, output_dir,
     Iterate over each software and event type, parse matching files, and concatenate all results.
     """
     for file_type in ["exclusion_novel", "inclusion_novel"]:
-        DAS_number_dict = {}
-        DAS_list_dict = {}
+        DSE_number_dict = {}
+        DSE_list_dict = {}
         event_dpsi_dict = {}
         test_ase_dict = {}
         control_ase_dict = {}
@@ -38,7 +38,7 @@ def unify_results(input_dir, software_list, event_list, sample_name, output_dir,
                 print(f"Warning: unsupported event type '{ev}', skipping.")
                 continue
 
-            DAS_list_dict[ev] = {}
+            DSE_list_dict[ev] = {}
             event_dpsi_dict[ev] = {}
             test_ase_dict[ev] = {}
             control_ase_dict[ev] = {}
@@ -64,13 +64,13 @@ def unify_results(input_dir, software_list, event_list, sample_name, output_dir,
                     df = parser_sw(df, ev)
 
                 if file_type == "exclusion_novel":
-                    df = filter_rmats_novel_events(df, sw, ev, input_dir, sample_name)
+                    df = filter_novel_events(df, sw, ev, input_dir, sample_name)
 
                 if file_type == "inclusion_novel":
                     save_dataframe(df, output_dir, sample_name, sw, ev)
 
                 test_ase_dict[ev][sw], control_ase_dict[ev][sw] = ase_extract(df, sw, ev, sample_name, input_dir)
-                df = annotate_das_class(df, ev, sw)
+                df = annotate_dse_class(df, ev, sw)
 
                 df_dpsi = extract_dpsi(df, sw, ev)
                 event_dpsi_dict[ev][sw] = df_dpsi[['uniform_ID', 'value']].rename(columns={'value': sw})
@@ -82,16 +82,16 @@ def unify_results(input_dir, software_list, event_list, sample_name, output_dir,
                 filtered = df[df['class'].isin(['up-regulate', 'down-regulate'])]
                 id_set = set(filtered['uniform_ID'])
                 if id_set:
-                    DAS_list_dict[ev][sw] = id_set
+                    DSE_list_dict[ev][sw] = id_set
 
-            DAS_number_dict[ev] = pd.DataFrame(summary)
+            DSE_number_dict[ev] = pd.DataFrame(summary)
 
-        for data_type, plot_dict in zip(["Test_ASE", "Control_ASE", "DAS"],
-                                        [test_ase_dict, control_ase_dict, DAS_list_dict]):
+        for data_type, plot_dict in zip(["Test_ASE", "Control_ASE", "DSE"],
+                                        [test_ase_dict, control_ase_dict, DSE_list_dict]):
             plot_venn_per_event_vennlib(plot_dict, output_dir, sample_name, filename=f"{data_type}_venn_{file_type}.png")
             plot_upset_per_event_combined(plot_dict, output_dir, sample_name, filename=f"{data_type}_upsets_{file_type}.png")
 
-        plot_multiple_event_summaries(DAS_number_dict, output_dir, sample_name, filename=f"DAS_number_{file_type}.png")
+        plot_multiple_event_summaries(DSE_number_dict, output_dir, sample_name, filename=f"DSE_number_{file_type}.png")
         plot_all_events_grid(event_dpsi_dict, query_software, output_dir, sample_name,
                              filename=f'dpsi_corr_{file_type}', ncols=2, figsize_scale=8)
 
@@ -106,7 +106,7 @@ def main():
                         nargs='+',
                         #choices=PARSERS.keys(),
                         required=True,
-                        help='space separated list of tools for benchmarking from the following list:SUPPA2, Rmats, psi-sigma, MAJIQ')
+                        help='space separated list of tools for benchmarking from the following list:SUPPA2 rMATS PSI-Sigma MAJIQ')
     parser.add_argument("-e", "--event", nargs='+', required=False, choices=["SE", "A3SS", "A5SS","MX", "RI", "AF", "AL"],
                         help="list of events to analyze. "
                         "(space separated)\n\n"
