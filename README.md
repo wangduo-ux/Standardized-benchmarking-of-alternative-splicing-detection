@@ -1,6 +1,8 @@
 # Standardized-benchmarking-of-alternative-splicing-detection
 
-**ASB.py** is a standardized benchmarking tool designed to unify the output of multiple alternative splicing analysis software, including **MAJIQ**, **PSI-Sigma**, **SUPPA2**, and **rMATS**. By converting results into a unified format, ASB enables downstream comparison, evaluation, and integration of splicing events across different tools.
+**ASB.py** (alternative splicing benchmarking) is a standardized benchmarking tool designed to unify the output of multiple alternative splicing analysis software, including **MAJIQ**, **PSI-Sigma**, **SUPPA2**, and **rMATS**. By converting results into a unified format, ASB enables downstream comparison, evaluation, and integration of splicing events across different tools.
+
+**ASI.py** (alternative splicing integration) processes the output from ASB.py containing uniform IDs and integrates DSE results from different AS event detection tools. DSEs supported by varying numbers of tools are combined to generate the final consensus DSE.
 
 **Installation**
 
@@ -49,7 +51,7 @@ Your input directory
 After running ASB.py, a uniform_ID column will be added to the output files of each software in their respective folders. 
 In addition, a folder named sample_name will be created under your input directory, containing comparison plots of the results from different software, including intersections of detected alternative splicing events, dPSI quantification consistency plots, and intersections of differential splicing events.
 
-**Command and options**
+**Command and options for ASB.py**
 ```
 python ASB.py -s SUPPA2 rMATS PSI-Sigma MAJIQ -e SE A5SS A3SS MX RI AF AL -g Homo_sapiens.GRCh38.109.gtf -i Your_input_directory -o Your_output_directory -sn Your_sample_name
 ```
@@ -75,3 +77,31 @@ RI: Retained intron (RI)
 AF: Alternative first exons
 AL: Alternative last exons
 ```
+
+**Command and options for ASI.py**
+```
+python ASI.py -s SUPPA2 rMATS PSI-Sigma MAJIQ -e SE A5SS A3SS MX RI AF AL -i Your_input_directory -o Your_output_directory -sn Your_sample_name
+```
+List of options available:
+```
+-s | --software: space separated list of tools for benchmarking from the following list:SUPPA2, rMATS, PSI-Sigma, MAJIQ.
+
+-o | --output-file: name of the output directory.
+
+-i | --input: input directory containing the output results from ASB.py. Inside this folder, each software’s output should be organized in a subfolder named after the software, i.e., SUPPA2, rMATS, PSI-Sigma, MAJIQ. Within each software folder, there should be subfolders named according to the sample names, i.e., lab1_M8.
+
+-sn | --sample_name: the name of your sample. It should be the same as the name of subfolder in your input directory, i.e., lab1_M8.
+
+-e | --event: space separated list of events to generate from the following list:
+
+SE: Skipping exon (SE) events
+A5SS: Alternative 5' (A5) splice sites
+A3SS: Alternative 3' (A3) splice sites
+MX: Mutually Exclusive (MX) exons
+RI: Retained intron (RI)
+AF: Alternative first exons
+AL: Alternative last exons
+```
+
+**Citation**
+The scripts here are for the Manuscript titled "**Benchmarking RNA-seq with the Quartet Reference Materials to establish Best Practices for Accurate Alternative Splicing Detection**" by Wang et al.
