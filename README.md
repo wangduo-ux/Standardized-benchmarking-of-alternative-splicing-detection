@@ -4,6 +4,11 @@
 
 **ASI.py** (alternative splicing integration) processes the output from ASB.py containing uniform IDs and integrates DSE results from different AS event detection tools. DSEs supported by varying numbers of tools are combined to generate the final consensus DSE.
 
+The unified formats for seven event types are as follow:
+
+<img width="865" height="532" alt="image" src="https://github.com/user-attachments/assets/9d7ad677-f0f2-43e2-8b92-b7dde4d4cafb" />
+
+
 **Installation**
 
 Install the required packages with:
