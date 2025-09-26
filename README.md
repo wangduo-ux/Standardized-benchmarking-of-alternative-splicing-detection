@@ -2,8 +2,6 @@
 
 **ASB.py** (alternative splicing benchmarking) is a standardized benchmarking tool designed to unify the output of multiple alternative splicing analysis software, including **MAJIQ**, **PSI-Sigma**, **SUPPA2**, and **rMATS**. By converting results into a unified format, ASB enables downstream comparison, evaluation, and integration of splicing events across different tools.
 
-**ASI.py** (alternative splicing integration) processes the output from ASB.py containing uniform IDs and integrates DSE results from different AS event detection tools. DSEs supported by varying numbers of tools are combined to generate the final consensus DSE.
-
 The unified formats for seven event types are as follow:
 
 <img width="865" height="532" alt="image" src="https://github.com/user-attachments/assets/9d7ad677-f0f2-43e2-8b92-b7dde4d4cafb" />
@@ -82,31 +80,9 @@ RI: Retained intron (RI)
 AF: Alternative first exons
 AL: Alternative last exons
 ```
+**Example data**
 
-**Command and options for ASI.py**
-```
-python ASI.py -s SUPPA2 rMATS PSI-Sigma MAJIQ -e SE A5SS A3SS MX RI AF AL -i Your_input_directory -o Your_output_directory -sn Your_sample_name
-```
-List of options available:
-```
--s | --software: space separated list of tools for benchmarking from the following list:SUPPA2, rMATS, PSI-Sigma, MAJIQ.
-
--o | --output-file: name of the output directory.
-
--i | --input: input directory containing the output results from ASB.py. Inside this folder, each software’s output should be organized in a subfolder named after the software, i.e., SUPPA2, rMATS, PSI-Sigma, MAJIQ. Within each software folder, there should be subfolders named according to the sample names, i.e., lab1_M8.
-
--sn | --sample_name: the name of your sample. It should be the same as the name of subfolder in your input directory, i.e., lab1_M8.
-
--e | --event: space separated list of events to generate from the following list:
-
-SE: Skipping exon (SE) events
-A5SS: Alternative 5' (A5) splice sites
-A3SS: Alternative 3' (A3) splice sites
-MX: Mutually Exclusive (MX) exons
-RI: Retained intron (RI)
-AF: Alternative first exons
-AL: Alternative last exons
-```
+We provided example data to evaluate alternative splicing (AS) event-level detection methods, derived from a single laboratory’s analysis of the Quartet reference material M8 sample, which can be accessed at https://figshare.com/account/mycontent/projects/264799.
 
 **Citation**
 
