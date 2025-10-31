@@ -6,6 +6,23 @@ The unified formats for seven event types are as follow:
 
 <img width="865" height="532" alt="image" src="https://github.com/user-attachments/assets/9d7ad677-f0f2-43e2-8b92-b7dde4d4cafb" />
 
+**System Requirements**
+Operating System: Linux, macOS, or Windows (64-bit)
+Python Version: Python 3.9 or higher
+Required Packages:
+  - pandas >= 2.3.0
+  - numpy >= 1.23.5
+  - matplotlib >= 3.5.2
+  - seaborn >= 0.13.2
+  - matplotlib-venn >= 1.1.2
+  - venn >= 0.1.3
+  - upsetplot >= 0.9.0
+  - scipy >= 1.13.1
+  - pillow >= 9.2.0
+Hardware Requirements:
+  - Minimum 4 GB RAM
+  - Recommended 8 GB RAM for large datasets
+
 
 **Installation**
 
@@ -14,23 +31,10 @@ Install the required packages with:
 bash
 pip install -r requirements.txt
 ```
-Python Dependencies
-```
-pandas
-numpy
-matplotlib
-seaborn
-matplotlib-venn
-venn
-upsetplot
-scipy
-pillow
-```
 Install from Github
 ```
-git clone
-cd mgcpy
-
+git clone https://github.com/wangduo-ux/Standardized-benchmarking-of-alternative-splicing-detection.git
+cd Standardized-benchmarking-of-alternative-splicing-detection
 ```
 
 **Input**
