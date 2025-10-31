@@ -14,6 +14,24 @@ Install the required packages with:
 bash
 pip install -r requirements.txt
 ```
+Python Dependencies
+```
+pandas
+numpy
+matplotlib
+seaborn
+matplotlib-venn
+venn
+upsetplot
+scipy
+pillow
+```
+Install from Github
+```
+git clone
+cd mgcpy
+
+```
 
 **Input**
 
