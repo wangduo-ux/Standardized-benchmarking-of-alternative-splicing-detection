@@ -108,8 +108,18 @@ AL: Alternative last exons
 ```
 **Example data**
 
-We provided example data to evaluate alternative splicing (AS) event-level detection methods, derived from a single laboratory’s analysis of the Quartet reference material M8 sample.
-Example data for standardized benchmarking of four alternative splicing detection tools. figshare. Dataset. https://doi.org/10.6084/m9.figshare.30215368.v1 
+We provided example data to evaluate alternative splicing (AS) event-level detection methods, derived from a single laboratory’s analysis of the Quartet reference materials.
+Example data for standardized benchmarking of four alternative splicing detection tools. figshare. Dataset. https://doi.org/10.6084/m9.figshare.30215368.v1
+For analyzing example data. the parameter "-sn" can be set as: M8-D6, F7-D6, or D5-D6        
+        
+        
+        
+        
+        
+        
+        
+        
+         
 
 **Citation**
 
