@@ -94,7 +94,7 @@ List of options available:
 
 -g | ----gtf: path of gene annotation file with GTF format.
 
--sn | --sample_name: the name of your sample. It should be the same as the name of subfolder in your input directory, i.e., lab1_M8.
+-sn | --sample_name: the name of your sample. It should be the same as the name of subfolder in your input directory, i.e., lab1_M8-D6.
 
 -e | --event: space separated list of events to generate from the following list:
 
@@ -109,8 +109,8 @@ AL: Alternative last exons
 **Example data**
 
 We provided example data to evaluate alternative splicing (AS) event-level detection methods, derived from a single laboratory’s analysis of the Quartet reference materials.
-"Example data for standardized benchmarking of four alternative splicing detection tools. figshare. Dataset. https://doi.org/10.6084/m9.figshare.30215368.v1". 
-For analysis of the example datasets, the -sn parameter should be specified as M8-D6, F7-D6, or D5-D6.     
+"Example data for standardized benchmarking of four alternative splicing detection tools. figshare. Dataset. https://doi.org/10.6084/m9.figshare.30215368". 
+For analysis of the example datasets, the -sn parameter should be specified as lab01_M8-D6, lab01_F7-D6, or lab01_D5-D6.     
         
 **Citation**
 
