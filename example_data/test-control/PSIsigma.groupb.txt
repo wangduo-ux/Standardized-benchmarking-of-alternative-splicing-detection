@@ -1,3 +1,0 @@
-test_01.Aligned.sortedByCoord.out.bam
-test_02.Aligned.sortedByCoord.out.bam
-test_03.Aligned.sortedByCoord.out.bam
