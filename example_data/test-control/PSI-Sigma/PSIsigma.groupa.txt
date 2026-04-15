@@ -1,0 +1,3 @@
+control_01.Aligned.sortedByCoord.out.bam
+control_02.Aligned.sortedByCoord.out.bam
+control_03.Aligned.sortedByCoord.out.bam
