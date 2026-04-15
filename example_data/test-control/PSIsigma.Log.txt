@@ -1,3 +1,0 @@
-Working directory = /psisigma_software/bin/PSI-Sigma-2.3
-Parameters =  --gtf /psisigma_output/splicing_variants.gtf --name PSIsigma --nread 10 --type 1 --fmode 3 --irrange 0 --threads 10 --groupa /psisigma_input/groupa.txt --groupb /psisigma_input/groupb.txt --output /psisigma_output/simulate
-Computing time = 0.3942 hours (or 23.652mins).
