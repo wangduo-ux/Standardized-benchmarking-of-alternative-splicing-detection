@@ -109,9 +109,14 @@ AL: Alternative last exons
 **Example data**
 
 We provided example data to evaluate alternative splicing (AS) event-level detection methods, derived from a single laboratory’s analysis of the Quartet reference materials.
-"Example data for standardized benchmarking of four alternative splicing detection tools. figshare. Dataset. https://doi.org/10.6084/m9.figshare.30215368". 
+Simulated datasets generated using AsimulatoR were used as example data. The analysis results from the six tools are provided in the example_data directory, and the corresponding raw FASTQ files are available via Figshare (https://doi.org/10.6084/m9.figshare.30215368)     
+        
+        
+        ". 
 For analysis of the example datasets, the -sn parameter should be specified as lab01_M8-D6, lab01_F7-D6, or lab01_D5-D6.     
         
 **Citation**
 
 The scripts here are for the Manuscript titled "**Benchmarking RNA-seq with the Quartet Reference Materials to establish Best Practices for Accurate Alternative Splicing Detection**" by Wang et al.
+
+The code is publicly available on GitHub under the MIT License.
