@@ -1,0 +1,55 @@
+2026-04-01 09:42:09,358 (PID:2800097) - INFO - Majiq deltapsi v2.5.6.dev1+g8423f68b
+2026-04-01 09:42:09,358 (PID:2800097) - INFO - Command: /home/zhaojiaxin/anaconda3/envs/majiq/bin/majiq deltapsi -j 10 -o /cold_data/wangduo/AsimulatoR/majiq/simulate -n test control -grp1 /cold_data/wangduo/AsimulatoR/majiq/sample_01.Aligned.sortedByCoord.out.majiq /cold_data/wangduo/AsimulatoR/majiq/sample_02.Aligned.sortedByCoord.out.majiq /cold_data/wangduo/AsimulatoR/majiq/sample_03.Aligned.sortedByCoord.out.majiq -grp2 /cold_data/wangduo/AsimulatoR/majiq/sample_04.Aligned.sortedByCoord.out.majiq /cold_data/wangduo/AsimulatoR/majiq/sample_05.Aligned.sortedByCoord.out.majiq /cold_data/wangduo/AsimulatoR/majiq/sample_06.Aligned.sortedByCoord.out.majiq
+2026-04-01 09:42:09,360 (PID:2800097) - CRITICAL - No Majiq License files were found, exiting
+2026-04-01 09:42:35,120 (PID:2801792) - INFO - Majiq deltapsi v2.5.6.dev1+g8423f68b
+2026-04-01 09:42:35,120 (PID:2801792) - INFO - Command: /home/zhaojiaxin/anaconda3/envs/majiq/bin/majiq --license /home/zhaojiaxin/sci_pjt/alt_spl/addon/majiq_license_academic_official.lic deltapsi -j 10 -o /cold_data/wangduo/AsimulatoR/majiq/simulate -n test control -grp1 /cold_data/wangduo/AsimulatoR/majiq/sample_01.Aligned.sortedByCoord.out.majiq /cold_data/wangduo/AsimulatoR/majiq/sample_02.Aligned.sortedByCoord.out.majiq /cold_data/wangduo/AsimulatoR/majiq/sample_03.Aligned.sortedByCoord.out.majiq -grp2 /cold_data/wangduo/AsimulatoR/majiq/sample_04.Aligned.sortedByCoord.out.majiq /cold_data/wangduo/AsimulatoR/majiq/sample_05.Aligned.sortedByCoord.out.majiq /cold_data/wangduo/AsimulatoR/majiq/sample_06.Aligned.sortedByCoord.out.majiq
+2026-04-01 09:42:35,145 (PID:2801792) - INFO - ╔═══════════════════════════════════════════════════════════════╗
+2026-04-01 09:42:35,145 (PID:2801792) - INFO - ╠╡ ACADEMIC License applied                                     ║
+2026-04-01 09:42:35,145 (PID:2801792) - INFO - ║  Name: Official Majiq Academic-only License                   ║
+2026-04-01 09:42:35,145 (PID:2801792) - INFO - ║  File: majiq_license_academic_official.lic                    ║
+2026-04-01 09:42:35,145 (PID:2801792) - INFO - ║  Expiration Date: Never                                       ║
+2026-04-01 09:42:35,145 (PID:2801792) - INFO - ║                                                               ║
+2026-04-01 09:42:35,145 (PID:2801792) - INFO - ╠╡ The academic license is for non-commercial purposes by       ║
+2026-04-01 09:42:35,145 (PID:2801792) - INFO - ╠╡ individuals at an academic or not for profit institution.    ║
+2026-04-01 09:42:35,145 (PID:2801792) - INFO - ╚═══════════════════════════════════════════════════════════════╝
+2026-04-01 09:42:35,145 (PID:2801792) - INFO - GROUP1: ['/cold_data/wangduo/AsimulatoR/majiq/sample_01.Aligned.sortedByCoord.out.majiq', '/cold_data/wangduo/AsimulatoR/majiq/sample_02.Aligned.sortedByCoord.out.majiq', '/cold_data/wangduo/AsimulatoR/majiq/sample_03.Aligned.sortedByCoord.out.majiq']
+2026-04-01 09:42:35,145 (PID:2801792) - INFO - GROUP2: ['/cold_data/wangduo/AsimulatoR/majiq/sample_04.Aligned.sortedByCoord.out.majiq', '/cold_data/wangduo/AsimulatoR/majiq/sample_05.Aligned.sortedByCoord.out.majiq', '/cold_data/wangduo/AsimulatoR/majiq/sample_06.Aligned.sortedByCoord.out.majiq']
+2026-04-01 09:42:35,145 (PID:2801792) - INFO - Parsing file: /cold_data/wangduo/AsimulatoR/majiq/sample_01.Aligned.sortedByCoord.out.majiq
+2026-04-01 09:42:35,188 (PID:2801792) - INFO - Parsing file: /cold_data/wangduo/AsimulatoR/majiq/sample_02.Aligned.sortedByCoord.out.majiq
+2026-04-01 09:42:35,221 (PID:2801792) - INFO - Parsing file: /cold_data/wangduo/AsimulatoR/majiq/sample_03.Aligned.sortedByCoord.out.majiq
+2026-04-01 09:42:35,263 (PID:2801792) - INFO - Group test: 1964 LSVs
+2026-04-01 09:42:35,263 (PID:2801792) - INFO - Parsing file: /cold_data/wangduo/AsimulatoR/majiq/sample_04.Aligned.sortedByCoord.out.majiq
+2026-04-01 09:42:35,294 (PID:2801792) - INFO - Parsing file: /cold_data/wangduo/AsimulatoR/majiq/sample_05.Aligned.sortedByCoord.out.majiq
+2026-04-01 09:42:35,327 (PID:2801792) - INFO - Parsing file: /cold_data/wangduo/AsimulatoR/majiq/sample_06.Aligned.sortedByCoord.out.majiq
+2026-04-01 09:42:35,369 (PID:2801792) - INFO - Group control: 1964 LSVs
+2026-04-01 09:42:35,370 (PID:2801792) - INFO - Number quantifiable LSVs: 1868
+2026-04-01 09:42:35,370 (PID:2801792) - INFO - Calculating prior matrix...
+2026-04-01 09:42:35,430 (PID:2801792) - INFO - Start Computing DeltaPSI
+2026-04-01 09:42:35,652 (PID:2801792) - INFO - Computation done, saving results....
+2026-04-01 09:42:38,331 (PID:2801792) - INFO - DeltaPSI calculation for test-control ended successfully! Result can be found at /cold_data/wangduo/AsimulatoR/majiq/simulate
+2026-04-01 09:43:25,219 (PID:2807907) - INFO - Majiq deltapsi v2.5.6.dev1+g8423f68b
+2026-04-01 09:43:25,219 (PID:2807907) - INFO - Command: /home/zhaojiaxin/anaconda3/envs/majiq/bin/majiq --license /home/zhaojiaxin/sci_pjt/alt_spl/addon/majiq_license_academic_official.lic deltapsi -j 10 -o /cold_data/wangduo/AsimulatoR/majiq/simulate -n test control -grp1 /cold_data/wangduo/AsimulatoR/majiq/sample_04.Aligned.sortedByCoord.out.majiq /cold_data/wangduo/AsimulatoR/majiq/sample_05.Aligned.sortedByCoord.out.majiq /cold_data/wangduo/AsimulatoR/majiq/sample_06.Aligned.sortedByCoord.out.majiq -grp2 /cold_data/wangduo/AsimulatoR/majiq/sample_01.Aligned.sortedByCoord.out.majiq /cold_data/wangduo/AsimulatoR/majiq/sample_02.Aligned.sortedByCoord.out.majiq /cold_data/wangduo/AsimulatoR/majiq/sample_03.Aligned.sortedByCoord.out.majiq
+2026-04-01 09:43:25,243 (PID:2807907) - INFO - ╔═══════════════════════════════════════════════════════════════╗
+2026-04-01 09:43:25,243 (PID:2807907) - INFO - ╠╡ ACADEMIC License applied                                     ║
+2026-04-01 09:43:25,243 (PID:2807907) - INFO - ║  Name: Official Majiq Academic-only License                   ║
+2026-04-01 09:43:25,243 (PID:2807907) - INFO - ║  File: majiq_license_academic_official.lic                    ║
+2026-04-01 09:43:25,243 (PID:2807907) - INFO - ║  Expiration Date: Never                                       ║
+2026-04-01 09:43:25,243 (PID:2807907) - INFO - ║                                                               ║
+2026-04-01 09:43:25,243 (PID:2807907) - INFO - ╠╡ The academic license is for non-commercial purposes by       ║
+2026-04-01 09:43:25,243 (PID:2807907) - INFO - ╠╡ individuals at an academic or not for profit institution.    ║
+2026-04-01 09:43:25,243 (PID:2807907) - INFO - ╚═══════════════════════════════════════════════════════════════╝
+2026-04-01 09:43:25,243 (PID:2807907) - INFO - GROUP1: ['/cold_data/wangduo/AsimulatoR/majiq/sample_04.Aligned.sortedByCoord.out.majiq', '/cold_data/wangduo/AsimulatoR/majiq/sample_05.Aligned.sortedByCoord.out.majiq', '/cold_data/wangduo/AsimulatoR/majiq/sample_06.Aligned.sortedByCoord.out.majiq']
+2026-04-01 09:43:25,243 (PID:2807907) - INFO - GROUP2: ['/cold_data/wangduo/AsimulatoR/majiq/sample_01.Aligned.sortedByCoord.out.majiq', '/cold_data/wangduo/AsimulatoR/majiq/sample_02.Aligned.sortedByCoord.out.majiq', '/cold_data/wangduo/AsimulatoR/majiq/sample_03.Aligned.sortedByCoord.out.majiq']
+2026-04-01 09:43:25,243 (PID:2807907) - INFO - Parsing file: /cold_data/wangduo/AsimulatoR/majiq/sample_04.Aligned.sortedByCoord.out.majiq
+2026-04-01 09:43:25,286 (PID:2807907) - INFO - Parsing file: /cold_data/wangduo/AsimulatoR/majiq/sample_05.Aligned.sortedByCoord.out.majiq
+2026-04-01 09:43:25,319 (PID:2807907) - INFO - Parsing file: /cold_data/wangduo/AsimulatoR/majiq/sample_06.Aligned.sortedByCoord.out.majiq
+2026-04-01 09:43:25,360 (PID:2807907) - INFO - Group test: 1923 LSVs
+2026-04-01 09:43:25,360 (PID:2807907) - INFO - Parsing file: /cold_data/wangduo/AsimulatoR/majiq/sample_01.Aligned.sortedByCoord.out.majiq
+2026-04-01 09:43:25,390 (PID:2807907) - INFO - Parsing file: /cold_data/wangduo/AsimulatoR/majiq/sample_02.Aligned.sortedByCoord.out.majiq
+2026-04-01 09:43:25,421 (PID:2807907) - INFO - Parsing file: /cold_data/wangduo/AsimulatoR/majiq/sample_03.Aligned.sortedByCoord.out.majiq
+2026-04-01 09:43:25,462 (PID:2807907) - INFO - Group control: 1923 LSVs
+2026-04-01 09:43:25,463 (PID:2807907) - INFO - Number quantifiable LSVs: 1868
+2026-04-01 09:43:25,463 (PID:2807907) - INFO - Calculating prior matrix...
+2026-04-01 09:43:25,522 (PID:2807907) - INFO - Start Computing DeltaPSI
+2026-04-01 09:43:25,756 (PID:2807907) - INFO - Computation done, saving results....
+2026-04-01 09:43:28,505 (PID:2807907) - INFO - DeltaPSI calculation for test-control ended successfully! Result can be found at /cold_data/wangduo/AsimulatoR/majiq/simulate
