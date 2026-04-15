@@ -64,10 +64,24 @@ Your input directory (sample level, such as sample label; test-control in our ex
 │    ├── PSIsigma.groupb.txt
 │    └── ...
 │
-└── MAJIQ/
-     ├── alt3and5prime.tsv
-     ├── alt3prime.tsv
-     ├── alt5prime.tsv
+├── MAJIQ/
+|    ├── alt3and5prime.tsv
+|    ├── alt3prime.tsv
+|    ├── alt5prime.tsv
+|    └── ...
+├── Spladder/
+│    ├── testing/
+|         ├──test_results_extended_C3_exon_skip.tsv
+|         ├──test_results_extended_C3_alt_5prime.tsv
+|         └── ...
+│    ├── merge_graphs_exon_skip_C3.confirmed.txt.gz
+│    ├── merge_graphs_alt_5prime_C3.confirmed.txt.gz
+│    └── ...
+│
+└── Whippet/
+     ├── *diff.gz
+     ├── *psi.gz
+     ├── *tpm.gz
      └── ...
         
 ```
@@ -107,6 +121,50 @@ AL: Alternative last exons
 
 We provided example data to evaluate alternative splicing (AS) event-level detection methods, derived from a single laboratory’s analysis of the Quartet reference materials.
 Simulated datasets generated using AsimulatoR were used as example data. The analysis results from the six tools are provided in the example_data directory, and the corresponding raw FASTQ files are available via Figshare (https://doi.org/10.6084/m9.figshare.30215368)
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
