@@ -102,7 +102,7 @@ Your input directory (sample level, such as sample label; test-control in our ex
 
 ## **Command and options for ASB.py**
 ```
-python ASSB.py -s SUPPA2 rMATS PSI-Sigma MAJIQ Spladder Whippet -e SE A5SS A3SS MX RI AF AL -g Homo_sapiens.GRCh38.109.gtf -i Your_input_directory -o Your_output_directory -sn Your_sample_name -A test_01 test_02 test_03 -B control_01 control_02 control_03
+python ASSB.py -s SUPPA2 rMATS PSI-Sigma MAJIQ Spladder Whippet -e SE A5SS A3SS MX RI AF AL -g splicing_variants.gtf -i ~/example_data/ -o Your_output_directory -sn test-control -A test_01 test_02 test_03 -B control_01 control_02 control_03
 ```
 List of options available:
 ```
@@ -110,9 +110,9 @@ List of options available:
 
 -o | --output-file: name of the output directory.
 
--i | --input: input directory containing the output results from different software. Inside this folder, each software’s output should be organized in a subfolder named after the software, i.e., SUPPA2, rMATS, PSI-Sigma, MAJIQ, Spladder, and Whippet. Within each software folder, there should be subfolders named according to the sample names, i.e., test-control.
+-i | --input: input directory containing the output results from different software. Inside this folder, each software’s output should be organized in a subfolder named after the software, i.e., SUPPA2, rMATS, PSI-Sigma, MAJIQ, Spladder, and Whippet.
 
--g | ----gtf: path of gene annotation file with GTF format.
+-g | ----gtf: path of gene annotation file with GTF format. i.e., splicing_variants.gtf for our simulated data.
 
 -sn | --sample_name: the name of your sample. It should be the same as the name of the subfolder in your input directory, i.e., test-control
 
@@ -125,13 +125,48 @@ List of options available:
     RI: Retained intron (RI)
     AF: Alternative first exons
     AL: Alternative last exons
--A | --groupA: space-separated list of technical replicate names of groupA (test group), such test_01 test_02 test_03
--B | --groupB: space-separated list of technical replicate names of groupB (control group), such control_01 control_02 control_03
+
+-A | --groupA: space-separated list of technical replicate names of groupA (test group), i.e., test_01 test_02 test_03
+-B | --groupB: space-separated list of technical replicate names of groupB (control group), i.e., control_01 control_02 control_03
 ```
 ## **Example data**
 
 Simulated datasets generated using AsimulatoR (https://github.com/daisybio/ASimulatoR.git) were used as example data. 
 The analysis results from the six event analysis tools are provided in the **example_data** directory, and the corresponding raw FASTQ files are available via Figshare (https://doi.org/10.6084/m9.figshare.30215368)
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
 
 For analysis of the example datasets, the -sn parameter should be specified as **test-control**, -A  parameter should be specified as **test_01 test_02 test_03**, -B  parameter should be specified as **control_01 control_02 control_03**.
@@ -151,9 +186,9 @@ In addition, a folder named sample_name will be created under your input directo
 
 (3) other analysis: the number of detected differential splicing events (DSE), and the intersection of detected DSE across six tools.
 
-## **Scripts Used for RNA-seq Data Processing and Figure Generation**
+## **Scripts Used for RNA-seq Data Processing and Figures Generation in the benchmarking study**
 
-The **plots_scripts** directory contains scripts for figure generation, and the **data_process_scripts** directory contains scripts for RNA-seq alternative splicing data processing, for “Benchmarking RNA-seq with the Quartet and MAQC Reference Materials to Establish Best Practices for Accurate Alternative Splicing Analysis”.
+The **plots_scripts** directory contains scripts for figure generation, and the **data_process_scripts** directory contains scripts for RNA-seq alternative splicing data processing, for **“Benchmarking RNA-seq with the Quartet and MAQC Reference Materials to Establish Best Practices for Accurate Alternative Splicing Analysis”**.
 
 ## **Citation**
 
