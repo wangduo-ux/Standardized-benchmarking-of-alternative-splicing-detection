@@ -1,6 +1,6 @@
 # Standardized-benchmarking-of-alternative-splicing-detection
 
-**ASB.py** (alternative splicing benchmarking) is a standardized benchmarking tool designed to unify the output of multiple alternative splicing analysis software, including **MAJIQ**, **PSI-Sigma**, **SUPPA2**, **rMATS**, **Spladder**, and **Whippet**. By converting results into a unified format, ASSB.py enables downstream comparison and evaluation of splicing events across different tools.
+**ASSB.py** (alternative splicing standardized benchmarking) is a standardized benchmarking pipeline for unifying the output of multiple alternative splicing analysis software, including **MAJIQ**, **PSI-Sigma**, **SUPPA2**, **rMATS**, **Spladder**, and **Whippet**. By converting results into a unified format, ASSB.py enables downstream comparison and evaluation of splicing events across different tools.
 
 The unified formats for seven event types are as follows:
 
