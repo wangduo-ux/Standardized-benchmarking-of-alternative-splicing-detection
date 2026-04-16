@@ -88,10 +88,6 @@ Your input directory (sample level, such as sample label; test-control in our ex
         
 ```
 
-**Output**
-
-After running ASSB.py, a uniform_ID column will be added to the output files of each software in their respective folders. 
-In addition, a folder named sample_name will be created under your input directory, containing comparison plots of the results from different software, including intersections of detected alternative splicing events, dPSI quantification consistency plots, and intersections of differential splicing events.
 
 **Command and options for ASB.py**
 ```
@@ -124,10 +120,25 @@ List of options available:
 **Example data**
 
 Simulated datasets generated using AsimulatoR (https://github.com/daisybio/ASimulatoR.git) were used as example data. 
-The analysis results from the six event analysis tools are provided in the **example_data** directory, and the corresponding raw FASTQ files are available via Figshare (https://doi.org/10.6084/m9.figshare.30215368).
+The analysis results from the six event analysis tools are provided in the **example_data** directory, and the corresponding raw FASTQ files are available via Figshare (https://doi.org/10.6084/m9.figshare.30215368)
+        
 
 For analysis of the example datasets, the -sn parameter should be specified as **test-control**, -A  parameter should be specified as **test_01 test_02 test_03**, -B  parameter should be specified as **control_01 control_02 control_03**.
 
+
+**Output**
+
+After running ASSB.py, a uniform_ID column will be added to the output files of each software in their respective folders. 
+In addition, a folder named sample_name will be created under your input directory, containing comparison plots of the results from different software, including intersections of detected alternative splicing events, dPSI quantification consistency plots, and intersections of differential splicing events.
+
+(1) The intersection of the detected alternative splicing events across six tools:
+
+<img width="1367" height="1490" alt="image" src="https://github.com/user-attachments/assets/48572712-e279-497f-9b1a-2018b2d2b058" />
+
+(2) The consistency of the dPSI quantification across six tools:
+<img width="774" height="1638" alt="image" src="https://github.com/user-attachments/assets/4b5e65eb-cbf6-4244-a21a-13196607432c" />
+
+(3) other analysis: the number of detected differential splicing events (DSE), and the intersection of detected DSE across six tools.
 
 **Scripts Used for RNA-seq Data Processing and Figure Generation**
 
