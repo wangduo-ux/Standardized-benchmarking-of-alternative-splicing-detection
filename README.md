@@ -135,39 +135,6 @@ Simulated datasets generated using AsimulatoR (https://github.com/daisybio/ASimu
 The analysis results from the six event analysis tools are provided in the **example_data** directory, and the corresponding raw FASTQ files are available via Figshare (https://doi.org/10.6084/m9.figshare.30215368)
         
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
 
 For analysis of the example datasets, the -sn parameter should be specified as **test-control**, -A  parameter should be specified as **test_01 test_02 test_03**, -B  parameter should be specified as **control_01 control_02 control_03**.
 
@@ -188,7 +155,9 @@ In addition, a folder named sample_name will be created under your input directo
 
 ## **Scripts Used for RNA-seq Data Processing and Figures Generation in the benchmarking study**
 
-The **plots_scripts** directory contains scripts for figure generation, and the **data_process_scripts** directory contains scripts for RNA-seq alternative splicing data processing, for **“Benchmarking RNA-seq with the Quartet and MAQC Reference Materials to Establish Best Practices for Accurate Alternative Splicing Analysis”**.
+The **plots_scripts** directory contains scripts for figure generation. Other figures are generated using OriginPro software, and the underlying data are available in the **Source Data file** attached to our paper. 
+
+The **data_process_scripts** directory contains scripts for RNA-seq alternative splicing data processing, including junction-, isoform-, and event-level evaluations, for **“Benchmarking RNA-seq with the Quartet and MAQC Reference Materials to Establish Best Practices for Accurate Alternative Splicing Analysis”**.
 
 ## **Citation**
 
